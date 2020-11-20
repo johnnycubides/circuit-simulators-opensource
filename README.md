@@ -12,3 +12,9 @@
 
 [rvq.fr/linux/gedasym](http://www.rvq.fr/linux/gedasym.php)
 
+##
+
+```bash
+.gEDA/gafrc
+(component-library "Path_to_gedasym/gedasym")
+```
