@@ -1,0 +1,38 @@
+v 20130925 2
+T 700 650 8 10 1 1 0 0 1
+refdes=VAmp?
+T 700 850 5 10 0 0 0 0 1
+device=VOLTAGE_SOURCE
+T 700 1050 5 10 0 0 0 0 1
+footprint=none
+T 700 1250 5 10 0 0 0 0 1
+numslots=0
+T 700 1450 5 10 0 0 0 0 1
+description=dc power source
+P 300 1200 300 900 1 0 0
+{
+T 350 1000 5 8 0 1 0 0 1
+pinnumber=1
+T 350 1000 5 8 0 1 0 2 1
+pinseq=1
+T 300 700 5 8 0 1 0 5 1
+pintype=pwr
+}
+P 300 0 300 300 1 0 0
+{
+T 350 100 5 8 0 1 0 0 1
+pinnumber=2
+T 350 100 5 8 0 1 0 2 1
+pinseq=2
+T 300 500 5 8 0 1 0 3 1
+pintype=pwr
+}
+V 300 600 300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 700 450 5 10 0 2 0 0 1
+value=DC 0V
+T 200 500 9 17 1 0 0 0 1
+A
+T 250 750 2 10 1 0 0 0 1
++
+T 250 325 4 13 1 0 0 0 1
+-

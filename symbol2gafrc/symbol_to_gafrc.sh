@@ -13,6 +13,10 @@ build(){
   cd ./symbol2gafrc/
   PATH1="\"$PATH_REP/symbols/bjt\" \"bjt\""
   PATH2="\"$PATH_REP/symbols/mosfet\" \"mosfet\""
+  PATH3="\"$PATH_REP/symbols/basic\" \"basic\""
+  PATH4="\"$PATH_REP/symbols/switches\" \"switches\""
+  PATH5="\"$PATH_REP/symbols/voltage_current_source\" \"vol-amp-src\""
+  PATH6="\"$PATH_REP/symbols/ammeter\" \"ammeter\""
   # path2="/home/`whoami`/basededatos/symbol_gEDA_ngspice/voltage_current_source"
   # path3="/home/`whoami`/basededatos/symbol_gEDA_ngspice/switches"
   # path4="/home/`whoami`/basededatos/symbol_gEDA_ngspice/ngspice"
@@ -25,6 +29,10 @@ build(){
   echo ";path para simbolos creados por usted" > gafrc
   echo "(component-library $PATH1)" >> gafrc
   echo "(component-library $PATH2)" >> gafrc
+  echo "(component-library $PATH3)" >> gafrc
+  echo "(component-library $PATH4)" >> gafrc
+  echo "(component-library $PATH5)" >> gafrc
+  echo "(component-library $PATH6)" >> gafrc
   # echo "(component-library "'"'$path2'"'")" >> gafrc
   # echo "(component-library "'"'$path3'"'")" >> gafrc
   # echo "(component-library "'"'$path4'"'")" >> gafrc
