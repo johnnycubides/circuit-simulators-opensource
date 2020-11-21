@@ -1,20 +1,45 @@
-# gedasymbol-for-ngspice
+# Guia para el uso de ésta documentación
 
-## Manejo símbolos
+La documentación presentada a continuación está escrita en MarkDown y puede
+ser visualizada en HTMl.
 
-[Symbol guide](http://wiki.geda-project.org/geda:symbols)
+  * Para editar y/o agregar más documentación puede hacerlo en el directorio **docs/**.
 
-[gEDA/gaf Symbol Creation](http://wiki.geda-project.org/geda:gschem_symbol_creation)
+  * El `Makefile` es responsable de las tareas de construcción y visualización de la información.
+    Puede ver ayudas digitando `make`.
 
-## Repositorio de símbols de referencia
+  * El proceso de visualización de la información es el siguiente:
 
-[gedasymbols.org](http://www.gedasymbols.org/)
+    1.  Abra una terminal y ejecute `make serve`.
 
-[rvq.fr/linux/gedasym](http://www.rvq.fr/linux/gedasym.php)
+    2.  Abra el navegador y entre a la siguiente dirección web `localhost:8000`.
 
-##
+# Instalación de MkDocs
+
+## En Linux
 
 ```bash
-.gEDA/gafrc
-(component-library "Path_to_gedasym/gedasym")
+pip install mkdocs
 ```
+## repositorios git
+
+```bash
+sudo python setup install
+sudo python3 setup install (recomendado)
+```
+
+* https://github.com/mkdocs/mkdocs.git (no especifica)
+* https://github.com/shauser/mkdocs-pdf-export-plugin (python3)
+* https://github.com/squidfunk/mkdocs-material.git (python3)
+
+## ¿ Más temas ?
+
+[Temas](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
+
+Atentamente:
+
+Catalejo+ Team
+
+johnnycubides@catalejoplus.com
+
+carolinapulido@catalejoplus.com
