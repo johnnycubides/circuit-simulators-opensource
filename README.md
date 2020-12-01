@@ -43,3 +43,11 @@ Catalejo+ Team
 johnnycubides@catalejoplus.com
 
 carolinapulido@catalejoplus.com
+
+## Dependencias
+
+```bash
+sudo apt install -y\
+  zip unzip\
+  gwave
+```

@@ -1,2 +1,3 @@
 PRJ=voltage-divider
-include ../../tools/Makefile
+MK=../../tools/Makefile
+include $(MK)

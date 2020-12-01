@@ -1,27 +1,36 @@
+PRJ?=
 SUITE?=lepton#lepton, eda
-PRJ?=voltage-divider
 s?=
 SIM?=$s
+MK?=
 
 ss: schema
 n: netlister
 s: simulate
+z:zip
+c:clear
 
-schema:
+check:
+	@ls $(PRJ).sch || (echo "Edita el Makefile y agrega el\n\
+nombre del proyecto sin la extencion .sch \n\n\
+PRJ=miProyecto\n";\
+exit 123;)
+
+schema: check
 ifeq ($(SUITE),lepton)
 	lepton-schematic $(PRJ).sch &
 else
 	gschem $(PRJ).sch &
 endif
 
-netlister:
+netlister: check
 ifeq ($(SUITE), lepton)
 	lepton-netlist -g spice-sdb -o $(PRJ).net $(PRJ).sch
 else
 	gnetlist -g spice-sdb -o $(PRJ).net $(PRJ).sch
 endif
 
-$(PRJ).op:
+$(PRJ).op: check
 	touch $(PRJ).op
 	@echo ".control" >> $(PRJ).op
 	@echo "set hcopydevtype=postscript" >> $(PRJ).op
@@ -43,8 +52,15 @@ $(PRJ).op:
 simulate: $(PRJ).op
 ifeq ($(SIM), )
 	@echo "Se requiere especificar archivo de simulación, ejemplo: \n"
-	@echo "make s s=example.sp\n"
+	@echo "make s s=sim/example.ngsim\n"
 else
 	mkdir -p out
 	ngspice -i $(PRJ).net $(PRJ).op $(SIM)
 endif
+
+zip: check
+	zip $(PRJ).zip -r sim/ lib/ $(PRJ).sch 
+	zip $(PRJ) -u -j $(MK)
+
+clear: check
+	rm -rf $(PRJ).zip out/ *.net *.op $(PRJ).sch~
