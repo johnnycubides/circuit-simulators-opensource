@@ -1,0 +1,6 @@
+.control
+  ic v(C)=0 v(1)=0
+  tran 1u 2m 0
+  write out/tran.raw v(C) 0
+  rusage everything
+.endc
