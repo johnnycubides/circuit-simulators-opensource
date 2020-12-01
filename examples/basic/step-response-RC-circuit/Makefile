@@ -1,2 +1,3 @@
 PRJ=step-resp-RC-circuit
-include ../../tools/Makefile
+MK=../../tools/Makefile
+include $(MK)
