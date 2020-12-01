@@ -1,0 +1,5 @@
+.control
+  tran 1m 1m 0
+  write out/tran.raw v(A)-v(B) v(B) 0
+  rusage everything
+.endc

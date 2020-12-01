@@ -1,0 +1,5 @@
+.control
+  dc v1 0 5 5
+  write out/dc.raw v(A)-v(B) v(B) 0
+  rusage everything
+.endc
