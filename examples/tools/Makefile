@@ -63,4 +63,4 @@ zip: check
 	zip $(PRJ) -u -j $(MK)
 
 clear: check
-	rm -rf $(PRJ).zip out/ *.net *.op $(PRJ).sch~
+	rm -rf out/ *.net *.op $(PRJ).sch~
