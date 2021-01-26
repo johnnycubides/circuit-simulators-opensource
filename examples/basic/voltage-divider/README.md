@@ -1,5 +1,9 @@
 # Divisor de voltaje
 
+## Análisis
+
+![Análisis](./voltage-divider-ana.png)
+
 ## Esquema
 
 ![divisor de voltaje ejemplo](./voltage-divider.png)
@@ -8,17 +12,19 @@
 
 ![simulación tran](./gwave-trans.png)
 
-Se presentan dos posibles simulaciones desde un transitorio y desde una
-simulación en DC
+* En la simulación se han etiquetado dos nodos como nodo **A** y nodo **B**
+* El voltaje **VR1** es el voltaje etiquetado en la simulación como **v(a)-v(b)**
+* El voltaje **VR2** es el voltaje etiquetado en la simulación como **v(b)**.
 
 ## Comandos
+
+Ejecuta los siguientes comando en la terminal para ver los resultados de
+la simulación.
 
 * `make ss`: Editar esquematico
 * `make n`: Generar netlist
 * `make s s=sim/tran.ngsim`: simulación transitoria
 * `gwave out/tran.raw`: ver resultado de simulación
-* `make s s=sim/dc.ngsim`: simulación en dc
-* `gwave out/dc.raw`: ver resultado de simulación
 
 ### Observaciones
 
