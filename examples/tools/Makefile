@@ -71,8 +71,11 @@ else
 endif
 
 zip: check
+	echo "PRJ=$(PRJ)" > /tmp/Makefile
+	cat $(MK) >> /tmp/Makefile
 	zip $(PRJ).zip -r sim/ lib/ $(PRJ).sch README.md
-	zip $(PRJ) -u -j $(MK)
+	# zip $(PRJ) -u -j $(MK)
+	zip $(PRJ) -u -j /tmp/Makefile
 
 clear: check
 	rm -rf out/ *.net *.op $(PRJ).sch~

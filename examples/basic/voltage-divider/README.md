@@ -25,6 +25,7 @@ Ejecuta los siguientes comando en la terminal para ver los resultados
 con los archivos fuentes.
 
 * `unzip voltage-divider.zip` descomprimir archivos fuente
+* `cd voltage-divider/` entra al directorio del proyecto
 * `make ss`: Editar esquemático
 * `make n`: Generar netlist
 * `make s s=sim/tran.ngsim`: simulación transitoria
