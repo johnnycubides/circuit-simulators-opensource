@@ -4,11 +4,23 @@ s?=
 SIM?=$s
 MK?=
 
+h: help
 ss: schema
 n: netlister
 s: simulate
-z:zip
-c:clear
+z: zip
+c: clear
+
+help:
+	@echo "\n\
+	### MENÚ ###\n\n\
+	make s: \tSimular con ngspice \n\
+	make n: \tCrear netlist \n\
+	make ss: \tEditar esquema \n\
+	make z: \tCrear zip desde archivos fuente \n\
+	make c: \tBorrar resulatados de simulaciones \n\
+	make h: \tEste menú de ayuda \n\
+	"
 
 check:
 	@ls $(PRJ).sch || (echo "Edita el Makefile y agrega el\n\
@@ -59,7 +71,7 @@ else
 endif
 
 zip: check
-	zip $(PRJ).zip -r sim/ lib/ $(PRJ).sch 
+	zip $(PRJ).zip -r sim/ lib/ $(PRJ).sch README.md
 	zip $(PRJ) -u -j $(MK)
 
 clear: check
