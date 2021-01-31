@@ -28,5 +28,6 @@ extra_css: [extra.css] # Active this (uncomment) if you have external css in doc
 
 nav:
    - Home: index.md
+   - Instalación de herramientas: install.md
    - Básicos:
        - Divisor de voltaje: ./basic/voltage-divider/README.md

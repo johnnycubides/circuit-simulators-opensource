@@ -1,0 +1,5 @@
+.control
+  tran 1m 1m 0
+  write out/tran.raw v(A) i(VAmp1) i(VAmp2)
+  rusage everything
+.endc
