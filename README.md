@@ -1,3 +1,26 @@
+# Ejemplos de simulación de circuitos electricos con software libre
+
+He querido compartir una documentación para la simulacióm de circuitos electricos
+con software opensource; existe varios simuladores actualmente y es interesante
+poderlos onservar un poco más desde adentro para ver la gama de posibilidades
+con ellos.
+
+Lista de software usado:
+
+* [ngspice](http://ngspice.sourceforge.net/)
+* [gEDA](http://www.geda-project.org/)
+* [Lepton-eda](https://github.com/lepton-eda/lepton-eda)
+* [gwave](https://sourceforge.net/projects/gwave/)
+
+[Puedes ver la documentación Aquí](https://readthedocs.org/projects/circuit-simulators-opensource/)
+
+**Observación**: La documentación está en proceso de construcción, se irán agregando ejemplos
+a medida que se vaya requiriendo.
+
+Saludos,
+
+Johnny
+
 # Guia para el uso de ésta documentación
 
 La documentación presentada a continuación está escrita en MarkDown y puede
@@ -40,9 +63,8 @@ Atentamente:
 
 Catalejo+ Team
 
-johnnycubides@catalejoplus.com
+jgcubidesc@unal.edu.co
 
-carolinapulido@catalejoplus.com
 
 ## Dependencias
 
