@@ -12,7 +12,7 @@ Lista de software usado:
 * [Lepton-eda](https://github.com/lepton-eda/lepton-eda)
 * [gwave](https://sourceforge.net/projects/gwave/)
 
-[Puedes ver la documentación Aquí](https://readthedocs.org/projects/circuit-simulators-opensource/en/latest/)
+[Puedes ver la documentación Aquí](https://circuit-simulators-opensource.readthedocs.io/en/latest/)
 
 **Observación**: La documentación está en proceso de construcción, se irán agregando ejemplos
 a medida que se vaya requiriendo.
