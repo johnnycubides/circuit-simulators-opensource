@@ -26,7 +26,7 @@ con los archivos fuentes.
 
 * `unzip projecto.zip` descomprimir archivos fuente
 * `cd proyecto/` entra al directorio del proyecto
-* `make ss`: Editar esquematico
+* `make ss`: Editar esquemático
 * `make n`: Generar netlist
 * `make s s=sim/tran.ngsim`: simulación transitoria
 * `gwave out/tran.raw`: ver resultado de simulación
