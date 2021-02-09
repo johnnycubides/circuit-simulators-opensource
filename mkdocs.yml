@@ -31,3 +31,4 @@ nav:
    - Instalación de herramientas: install.md
    - Básicos:
        - Divisor de voltaje: ./basic/voltage-divider/README.md
+       - Divisor de corriente: ./basic/current-divider/README.md
