@@ -1,5 +1,5 @@
 .control
   tran 1u 6m 0 uic 
-  write out/tran.raw v(out) 0
+  write out/tran2.raw v(out) 0
   rusage everything
 .endc
