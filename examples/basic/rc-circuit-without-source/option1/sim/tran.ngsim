@@ -1,6 +1,6 @@
 .ic v(out)=3
 .control
-  tran 1u 1m 0 uic 
+  tran 1u 6m 0 uic 
   write out/tran2.raw v(out) 0
   rusage everything
 .endc

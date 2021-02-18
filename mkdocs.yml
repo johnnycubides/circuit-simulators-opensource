@@ -32,3 +32,4 @@ nav:
    - Básicos:
        - Divisor de voltaje: ./basic/voltage-divider/README.md
        - Divisor de corriente: ./basic/current-divider/README.md
+
