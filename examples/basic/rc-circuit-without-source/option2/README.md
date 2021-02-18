@@ -1,4 +1,4 @@
-# TÍTULO
+# Circuito RC sin fuente
 
 ## Análisis
 
