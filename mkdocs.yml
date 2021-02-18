@@ -32,4 +32,5 @@ nav:
    - Básicos:
        - Divisor de voltaje: ./basic/voltage-divider/README.md
        - Divisor de corriente: ./basic/current-divider/README.md
+       - Circuito RC sin fuente: ./basic/rc-circuit-without-source/README.md
 
